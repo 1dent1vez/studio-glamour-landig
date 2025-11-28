@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glam Studio - Diseño de Uñas Profesional</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fuentes de Google para tipografía elegante -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Iconos para elementos visuales -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Encabezado con navegación -->
+    <header class="header">
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="logo">
+            <h1>Glam Studio</h1>
+            <span class="tagline">Nail Art & Beauty</span>
+          </div>
+          <ul class="nav-menu">
+            <li><a href="#inicio" class="nav-link">Inicio</a></li>
+            <li><a href="#servicios" class="nav-link">Servicios</a></li>
+            <li><a href="#galeria" class="nav-link">Galería</a></li>
+            <li><a href="#contacto" class="nav-link">Contacto</a></li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Sección principal hero -->
+    <section id="inicio" class="hero">
+      <!-- HERO V2 — profesional y mobile-first -->
+      <section id="inicio" class="hero-v2" aria-labelledby="hero-title">
+        <div class="container">
+          <div class="hero-grid">
+            <!-- Texto -->
+            <div class="hero-copy">
+              <h1 id="hero-title" class="hero-title">
+                Transforma tus uñas en obras de arte
+              </h1>
+              <p class="hero-subtitle">
+                Especialistas en diseño con técnicas innovadoras y productos de
+                alta calidad.
+              </p>
+
+              <div class="hero-ctas">
+                <!-- Botón de WhatsApp en el hero o donde lo uses -->
+                <button
+                  id="btnWhatsappHero"
+                  type="button"
+                  class="btn btn-primary"
+                  aria-label="Reservar por WhatsApp"
+                >
+                  <i class="fab fa-whatsapp" aria-hidden="true"></i> Reservar
+                  Cita
+                </button>
+
+                <a href="#servicios" class="btn btn-secondary">Ver Servicios</a>
+              </div>
+            </div>
+
+            <!-- Imagen (tarjeta controlada) -->
+            <figure class="hero-visual" aria-label="Estudio Glam Studio">
+              <picture>
+                <!-- si tienes AVIF/WebP, añade <source>; con JPG funciona perfecto -->
+                <img
+                  src="images/hero/studio 1.jpeg"
+                  alt="Área de trabajo profesional de Glam Studio"
+                  width="1280"
+                  height="853"
+                  loading="eager"
+                  decoding="async"
+                  class="hero-img"
+                />
+              </picture>
+              <figcaption class="visually-hidden">
+                Espacio de trabajo de Glam Studio
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- Sección de servicios -->
+    <section id="servicios" class="services">
+      <div class="container">
+        <h2 class="section-title">Nuestros Servicios</h2>
+        <p class="section-subtitle">
+          Ofrecemos una amplia gama de servicios profesionales para el cuidado y
+          diseño de uñas
+        </p>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <h3>Nail Art</h3>
+            <p>
+              Diseños únicos y personalizados que reflejan tu estilo personal
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-gem"></i>
+            </div>
+            <h3>Manicura en Gel</h3>
+            <p>Acabado duradero con brillo profesional que perdura semanas</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-magic"></i>
+            </div>
+            <h3>Extensiones de pestañas</h3>
+            <p>Alargamiento con técnicas avanzadas y materiales premium</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-spa"></i>
+            </div>
+            <h3>Tratamientos</h3>
+            <p>Micropigmentacion, Rellenos faciales, Mesoterapia corporal</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de galería moderna (mobile-first con scroll-snap) -->
+    <section id="galeria" class="gallery" aria-labelledby="galeria-title">
+      <div class="container">
+        <header class="gallery-header">
+          <h2 id="galeria-title" class="section-title">Galería de Estilo</h2>
+          <p class="section-subtitle">
+            Descubre el arte y la precisión detrás de cada diseño
+          </p>
+        </header>
+
+        <!-- Pista para móvil: carrusel horizontal -->
+        <div class="gallery-track" aria-label="Carrusel de trabajos recientes">
+          <figure class="gallery-card">
+            <img
+              loading="lazy"
+              src="images/gallery/desing 8.jpeg"
+              alt="Uñas elegantes con diseño artístico"
+            />
+            <figcaption>
+              Diseño nude con flores 3D multicolor — una combinación delicada
+              entre elegancia y creatividad.
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-card">
+            <img
+              loading="lazy"
+              src="images/gallery/servicio 3.jpeg"
+              alt="Diseño en tonos nude y acabado brillante"
+            />
+            <figcaption>
+              Extensiones de pestañas con acabado volumen — mirada intensa,
+              definida y elegante.
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-card">
+            <img
+              loading="lazy"
+              src="images/gallery/desing 9.jpeg"
+              alt="Uñas decoradas con pedrería fina"
+            />
+            <figcaption>
+              Diseño stiletto en tonos rosa y nude con incrustaciones brillantes
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-card">
+            <img
+              loading="lazy"
+              src="images/gallery/desing 4.jpeg"
+              alt="Manicura francesa moderna"
+            />
+            <figcaption>Manicura stiletto en degradado rosa</figcaption>
+          </figure>
+
+          <figure class="gallery-card">
+            <img
+              loading="lazy"
+              src="images/gallery/servicio 2.jpeg"
+              alt="Rinomodelación con ácido hialurónico"
+            />
+            <figcaption>Rinomodelación con ácido hialurónico</figcaption>
+          </figure>
+
+          <figure class="gallery-card">
+            <img
+              loading="lazy"
+              src="images/gallery/desing 6.jpeg"
+              alt="Diseño de uñas con glitter profesional"
+            />
+            <figcaption>
+              Diseño en tonos nude con bordes dorados metálicos y detalle
+              central en pedrería
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-card">
+            <img
+              loading="lazy"
+              src="images/gallery/servicio 1.jpeg"
+              alt="Tratamiento estético premium"
+            />
+            <figcaption>Tratamiento estético premium</figcaption>
+          </figure>
+
+          <figure class="gallery-card">
+            <img
+              loading="lazy"
+              src="images/gallery/pestañas 1.jpeg"
+              alt="Extensiones de pestañas voluminosas"
+            />
+            <figcaption>Extensiones de pestañas</figcaption>
+          </figure>
+
+          <figure class="gallery-card">
+            <img
+              loading="lazy"
+              src="images/gallery/desing 7.jpeg"
+              alt="Diseño de uñas con acabado profesional"
+            />
+            <figcaption>
+              Diseño efecto galaxia en tonos púrpura y negro con destellos
+              metálicos
+            </figcaption>
+          </figure>
+        </div>
+
+        <!-- Grid sólo para pantallas grandes -->
+        <div class="gallery-grid">
+          <figure class="gallery-item tall">
+            <img
+              loading="lazy"
+              src="images/gallery/desing 8.jpeg"
+              alt="Uñas elegantes con diseño artístico"
+            />
+            <figcaption>Diseño nude con flores 3D multicolor</figcaption>
+          </figure>
+
+          <figure class="gallery-item wide">
+            <img
+              loading="lazy"
+              src="images/gallery/servicio 3.jpeg"
+              alt="Diseño en tonos nude y acabado brillante"
+            />
+            <figcaption>Extensiones de pestañas con acabado volumen</figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <img
+              loading="lazy"
+              src="images/gallery/desing 9.jpeg"
+              alt="Uñas decoradas con pedrería fina"
+            />
+            <figcaption>
+              Diseño stiletto en tonos rosa y nude con incrustaciones brillantes
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <img
+              loading="lazy"
+              src="images/gallery/desing 4.jpeg"
+              alt="Manicura francesa moderna"
+            />
+            <figcaption>Manicura stiletto en degradado rosa</figcaption>
+          </figure>
+
+          <figure class="gallery-item wide">
+            <img
+              loading="lazy"
+              src="images/gallery/servicio 2.jpeg"
+              alt="Rinomodelación con ácido hialurónico"
+            />
+            <figcaption>Rinomodelación con ácido hialurónico</figcaption>
+          </figure>
+
+          <figure class="gallery-item tall">
+            <img
+              loading="lazy"
+              src="images/gallery/desing 6.jpeg"
+              alt="Diseño de uñas con glitter profesional"
+            />
+            <figcaption>
+              Diseño en tonos nude con bordes dorados metálicos y detalle
+              central en pedrería
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item tall">
+            <img
+              loading="lazy"
+              src="images/gallery/servicio 1.jpeg"
+              alt="Tratamiento estético premium"
+            />
+            <figcaption>Tratamiento estético premium</figcaption>
+          </figure>
+
+          <figure class="gallery-item tall">
+            <img
+              loading="lazy"
+              src="images/gallery/pestañas 1.jpeg"
+              alt="Extensiones de pestañas voluminosas"
+            />
+            <figcaption>Extensiones de pestañas</figcaption>
+          </figure>
+
+          <figure class="gallery-item tall">
+            <img
+              loading="lazy"
+              src="images/gallery/desing 7.jpeg"
+              alt="Diseño de uñas con acabado profesional"
+            />
+            <figcaption>
+              Diseño efecto galaxia en tonos púrpura y negro con destellos
+              metálicos
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section id="contacto" class="contact" aria-labelledby="contacto-title">
+      <div class="container">
+        <header class="contact-header">
+          <h2 id="contacto-title" class="section-title">
+            Reserva por WhatsApp
+          </h2>
+          <p class="section-subtitle">Responde 3 campos y agenda en un clic</p>
+        </header>
+
+        <form
+          id="formWhatsapp"
+          class="wa-form"
+          novalidate
+          aria-describedby="contacto-ayuda"
+        >
+          <p id="contacto-ayuda" class="sr-only">
+            Completa tu nombre, servicio, fecha y hora para abrir WhatsApp con
+            el mensaje preparado.
+          </p>
+
+          <fieldset class="wa-fieldset">
+            <legend class="sr-only">Datos para la reserva</legend>
+
+            <div class="wa-row">
+              <div class="wa-col">
+                <label for="waNombre" class="wa-label">Nombre *</label>
+                <input
+                  id="waNombre"
+                  name="nombre"
+                  type="text"
+                  class="wa-input"
+                  placeholder="Tu nombre"
+                  required
+                  aria-required="true"
+                  autocomplete="name"
+                  inputmode="text"
+                />
+                <small
+                  class="wa-error"
+                  id="errNombre"
+                  role="alert"
+                  aria-live="polite"
+                ></small>
+              </div>
+
+              <div class="wa-col">
+                <label for="waServicio" class="wa-label">Servicio *</label>
+                <select
+                  id="waServicio"
+                  name="servicio"
+                  class="wa-input"
+                  required
+                  aria-required="true"
+                  autocomplete="off"
+                >
+                  <option value="" selected disabled>
+                    Selecciona un servicio
+                  </option>
+                  <option value="Nail Art" data-duracion="90">
+                    Nail Art — 90 min
+                  </option>
+                  <option value="Manicura en Gel" data-duracion="60">
+                    Manicura en Gel — 60 min
+                  </option>
+                  <option value="Extensiones de Pestañas" data-duracion="120">
+                    Extensiones de Pestañas — 120 min
+                  </option>
+                  <option value="Tratamiento de Spa" data-duracion="75">
+                    Tratamiento de Spa — 75 min
+                  </option>
+                </select>
+                <small class="wa-hint" id="hintServicio"
+                  >La duración ayuda a sugerir horarios libres.</small
+                >
+                <small
+                  class="wa-error"
+                  id="errServicio"
+                  role="alert"
+                  aria-live="polite"
+                ></small>
+              </div>
+            </div>
+
+            <div class="wa-row">
+              <div class="wa-col">
+                <label for="waFecha" class="wa-label">Fecha deseada *</label>
+                <input
+                  id="waFecha"
+                  name="fecha"
+                  type="date"
+                  class="wa-input"
+                  required
+                  aria-required="true"
+                  min=""
+                  autocomplete="off"
+                />
+                <small
+                  class="wa-error"
+                  id="errFecha"
+                  role="alert"
+                  aria-live="polite"
+                ></small>
+              </div>
+
+              <div class="wa-col">
+                <label for="waHora" class="wa-label">Hora aproximada *</label>
+                <input
+                  id="waHora"
+                  name="hora"
+                  type="time"
+                  class="wa-input"
+                  required
+                  aria-required="true"
+                  step="900"
+                  autocomplete="off"
+                  inputmode="numeric"
+                />
+                <small
+                  class="wa-error"
+                  id="errHora"
+                  role="alert"
+                  aria-live="polite"
+                ></small>
+              </div>
+            </div>
+
+            <div class="wa-row">
+              <div class="wa-col">
+                <label for="waMensaje" class="wa-label">Notas (opcional)</label>
+                <textarea
+                  id="waMensaje"
+                  name="mensaje"
+                  rows="3"
+                  class="wa-input"
+                  placeholder="Ej. preferencia de color, alergias, etc."
+                  autocomplete="off"
+                ></textarea>
+              </div>
+            </div>
+
+            <!-- Consentimiento y honeypot -->
+            <div class="wa-row wa-terms">
+              <label class="wa-checkbox">
+                <input
+                  type="checkbox"
+                  id="waConsent"
+                  required
+                  aria-required="true"
+                />
+                <span
+                  >Acepto ser contactada(o) por WhatsApp para confirmar mi
+                  cita.</span
+                >
+              </label>
+              <!-- Honeypot antispam -->
+              <input
+                type="text"
+                id="website"
+                name="website"
+                class="hp"
+                tabindex="-1"
+                autocomplete="off"
+                aria-hidden="true"
+              />
+            </div>
+
+            <button
+              id="btnWhatsapp"
+              type="submit"
+              class="btn btn-primary wa-btn"
+              aria-live="polite"
+            >
+              <span class="btn-text">Enviar por WhatsApp</span>
+              <span class="btn-spinner" aria-hidden="true"></span>
+            </button>
+
+            <!-- Fallback accesible sin JS -->
+            <noscript>
+              <p>
+                Activa JavaScript para prellenar el mensaje. Si prefieres,
+                <a
+                  class="btn btn-outline"
+                  href="https://wa.me/525534762060"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >abre WhatsApp</a
+                >.
+              </p>
+            </noscript>
+          </fieldset>
+        </form>
+
+        <div class="wa-meta" aria-label="Información del estudio">
+          <a
+            class="wa-meta-item"
+            href="https://www.google.com.mx/maps/place/Glam+Studio/@19.2442068,-99.548597,20.75z/data=!4m6!3m5!1s0x85cd8b0a63e41905:0xcb6e0cfe1ff46ba7!8m2!3d19.2442904!4d-99.5484408!16s%2Fg%2F11xyvkglsr?entry=ttu&g_ep=EgoyMDI1MTAwOC4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fas fa-map-marker-alt" aria-hidden="true"></i> Metepec,
+            México
+          </a>
+          <span class="dot" aria-hidden="true"></span>
+          <span class="wa-meta-item"
+            ><i class="fas fa-clock" aria-hidden="true"></i> Lun–Sáb:
+            9:00–20:00</span
+          >
+          <span class="dot" aria-hidden="true"></span>
+          <a class="wa-meta-item" href="tel:+525534762060"
+            ><i class="fas fa-phone" aria-hidden="true"></i> +52 5534762060</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-main">
+          <!-- Marca -->
+          <div class="footer-brand">
+            <h3>Glam Studio</h3>
+            <p class="brand-description">
+              Tu destino para el arte en uñas y belleza profesional en Metepec
+            </p>
+
+            <div class="social-links">
+              <a
+                href="https://www.facebook.com/share/17e68w3wBR/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/glaamour.studioo"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="https://wa.me/525534762060?text=Hola%20vi%20su%20sitio%20web%20y%20quiero%20agendar%20una%20cita"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Servicios del studio -->
+          <div class="footer-services">
+            <h4><i class="fas fa-sparkles"></i> Nuestros Servicios</h4>
+            <ul class="services-list">
+              <li><a href="#servicios">Nail Art Personalizado</a></li>
+              <li><a href="#servicios">Manicura de Gel Profesional</a></li>
+              <li><a href="#servicios">Extensiones Premium</a></li>
+              <li><a href="#servicios">Tratamientos Especializados</a></li>
+            </ul>
+          </div>
+
+          <!-- Información de contacto del studio -->
+          <div class="footer-contact">
+            <h4><i class="fas fa-map-marker-alt"></i> Contacto del Studio</h4>
+            <div class="contact-items">
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="contact-text">
+                  <strong>Ubicación</strong>
+                  <span
+                    >Nacional 447, San Gaspar Tlahuelilpan, 52147 San Gaspar
+                    Tlahuelilpan, Méx.</span
+                  >
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <div class="contact-text">
+                  <strong>Teléfono</strong>
+                  <span>+52 5534762060</span>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <i class="fas fa-clock"></i>
+                <div class="contact-text">
+                  <strong>Horarios</strong>
+                  <span>Lun - Sáb: 9:00 AM - 8:00 PM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Divisor con “gema” central -->
+        <div class="footer-divider">
+          <span class="divider-line"></span>
+          <div class="divider-decoration">
+            <i class="fas fa-gem"></i>
+          </div>
+          <span class="divider-line"></span>
+        </div>
+
+        <p class="footer-legal">
+          © 2025 Glam Studio. Todos los derechos reservados · Hecho por
+          <a
+            href="https://brilint.vercel.app/"
+            class="footer-brand-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Brilint
+          </a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
