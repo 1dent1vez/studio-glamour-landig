@@ -1,0 +1,6 @@
+{
+  "buildCommand": null,
+  "outputDirectory": "studio-glamour-landing",
+  "framework": null,
+  "rewrites": [{ "source": "/(.*)", "destination": "/studio-glamour-landing/$1" }]
+}
