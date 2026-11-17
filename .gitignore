@@ -1,1 +1,28 @@
 .vercel
+.hermes/
+__pycache__/
+.pytest_cache/
+node_modules/
+.env
+.env.*
+!.env.example
+
+# Keep all Impeccable tooling, design artifacts and runtime state local.
+.impeccable/
+.agents/
+.agent/
+.claude/
+.cursor/
+/AGENTS.md
+/CLAUDE.md
+/.cursorrules
+/DESIGN.md
+/PRODUCT.md
+
+# Internal development tools and verification records stay local.
+/scripts/
+/tests/
+/docs/maintenance.md
+/docs/photo-provenance.json
+/docs/verification.json
+/studio-glamour-landing/assets/photos/*.webp.json

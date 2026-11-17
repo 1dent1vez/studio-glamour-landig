@@ -1,0 +1,9 @@
+* text=auto eol=lf
+*.png binary
+*.jpeg binary
+*.jpg binary
+*.webp binary
+*.woff2 binary
+*.pdf binary
+# Preserve upstream license text, including its original whitespace.
+studio-glamour-landing/assets/fonts/*-OFL.txt -whitespace
